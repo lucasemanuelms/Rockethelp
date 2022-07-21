@@ -3,7 +3,7 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 
 import { THEME } from './src/styles/theme';
 
-import { Home } from './src/screens/Home';
+import { Register } from './src/screens/Register';
 import { Loading } from './src/components/Loading';
 
 
@@ -19,7 +19,7 @@ export default function App() {
         translucent //Faz com que a barrinha superior meio que suma e deixe que o conteúdo ocupe a tela toda e não só dps da barrinha superior
       />
 
-      {fontsLoaded ? <Home/> : <Loading/>}
+      {fontsLoaded ? <Register/> : <Loading/>}
     </NativeBaseProvider>
   );
 }
